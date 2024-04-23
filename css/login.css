@@ -1,0 +1,163 @@
+@charset "UTF-8";
+.login.container img {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.login.container h3 {
+  font-size: 20px;
+  color: #3d1101;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.form-login,
+.form-signup {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.16);
+  border-top: 3px solid #ff5e45;
+}
+.form-login .form-title,
+.form-signup .form-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3d1101;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  border: none;
+}
+.form-login label,
+.form-signup label {
+  margin-bottom: 3px;
+  color: #3d1101;
+}
+.form-login input.form-input,
+.form-signup input.form-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ececec;
+          box-shadow: inset 0px 1px 0px 0px #ececec;
+  border-radius: 3px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.form-login a,
+.form-signup a {
+  font-size: 14px;
+  color: #ff5e45;
+  margin-bottom: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.form-login a:hover,
+.form-signup a:hover {
+  color: #3d1101;
+}
+.form-login .btn-group,
+.form-signup .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form-login .btn,
+.form-signup .btn {
+  display: block;
+  width: 45%;
+  font-size: 14px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.form-login .btn:hover,
+.form-signup .btn:hover {
+  cursor: pointer;
+  background-color: #3d1101;
+}
+.form-login .signup-btn a,
+.form-signup .signup-btn a {
+  height: auto;
+  background: rgba(0, 0, 0, 0.35);
+  text-align: center;
+  margin-bottom: 0;
+  padding: 6px;
+  border-radius: 3px;
+  color: #ffffff;
+}
+.form-login .login-btn,
+.form-signup .login-btn {
+  padding: 6px;
+  background: #f56c23;
+}
+
+.form-signup {
+  max-width: 620px;
+  color: #3d1101;
+}
+
+.signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 620px;
+}
+.signup .terms {
+  width: 45%;
+}
+@media (max-width: 576px) {
+  .signup .terms {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+.signup .terms h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.signup .terms p {
+  line-height: 1.25;
+}
+.signup .main-form {
+  width: 45%;
+}
+@media (max-width: 576px) {
+  .signup .main-form {
+    width: 90%;
+  }
+}
+.signup .signup-btn {
+  background: #f56c23;
+  margin-left: auto;
+  padding: 6px;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.input-group {
+  position: relative;
+  display: inline-block;
+}
+
+.input-group .matreial-icons { /*左邊圖示*/
+  position: absolute;
+  left: 3px;
+  top: calc(50% - 0.5em);
+}

@@ -1,0 +1,195 @@
+.shopping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #3d1101;
+}
+
+.type-menu {
+  width: 20%;
+}
+@media (max-width: 765px) {
+  .type-menu {
+    width: 60%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .type-menu {
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.type-menu h3 {
+  font-size: 20px;
+  color: #3d1101;
+  line-height: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.type-menu ul li:first-child a {
+  background-color: #3d1101;
+  color: #fff;
+}
+.type-menu ul a {
+  padding: 16px 5px;
+  border-bottom: 1px solid #3d1101;
+  color: #3d1101;
+  font-weight: bold;
+}
+.type-menu ul a:hover {
+  background-color: #3d1101;
+  color: #fff;
+}
+
+.main-container {
+  width: 70%;
+}
+.main-container .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+}
+@media (max-width: 765px) {
+  .main-container .top {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.main-container .searchbar {
+  width: 70%;
+  border: 2px solid #3d1101;
+  line-height: 2;
+  background-color: #efe9e7;
+}
+@media (max-width: 765px) {
+  .main-container .searchbar {
+    width: 85%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .main-container .searchbar {
+    width: 100%;
+  }
+}
+.main-container .searchbar:focus {
+  border: 2px solid #3d1101;
+}
+.main-container .checkout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 765px) {
+  .main-container .checkout {
+    margin-left: auto;
+    margin-right: 8%;
+    margin-bottom: 20px;
+  }
+}
+.main-container .checkout a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 12px;
+  border-right: 1px solid #3d1101;
+  margin-right: 17px;
+  color: #3d1101;
+}
+.main-container .checkout .material-icons {
+  cursor: pointer;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .products {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.products .card {
+  color: #3d1101;
+  text-align: center;
+  width: 220px;
+  -webkit-box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+  margin-bottom: 30px;
+}
+.products .card-top {
+  margin-bottom: 11px;
+}
+.products .card-top img {
+  height: 120px;
+}
+.products .card-bottom h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.products .card-bottom h5 {
+  font-size: 12px;
+  margin-bottom: 8px;
+  margin-bottom: 20px;
+}
+.products .card-bottom p {
+  border-top: 1px solid #3D1101;
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+.products .card-bottom a.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  padding: 3px 0;
+  border: 2px solid #ff5e45;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #ff5e45;
+}
+.products .card-bottom a.btn:hover {
+  background-color: #ff5e45;
+  color: #fff;
+}

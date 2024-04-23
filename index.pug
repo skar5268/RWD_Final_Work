@@ -1,0 +1,147 @@
+doctype html
+html(lang="zh-Hant-TW")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=  , initial-scale=1.0")
+    title 六角西餐廳
+    link(rel="shortcut icon" href="./img/favicon.png" type="./image/x-icon")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    meta(name="description" content="六角西餐廳")
+
+    //- Facebook Open Graph Meta Data
+    meta(property="og:url" content="./index.html")
+    meta(property="og:type" content="website")
+    meta(property="og:title" content="六角西餐廳")
+    meta(property="og:description" content="RWD 最終作業")
+    meta(property="og:image" content="./image/x-icon")
+
+    //- Twitter Meta Data
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:site" content="./index.html")
+    meta(name="twitter:creator" content="阿若")
+    meta(name="twitter:title" content="六角西餐廳")
+    meta(name="twitter:description" content="RWD 最終作業")
+    meta(name="twitter:image" content="./image/x-icon")
+
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    link(rel="stylesheet" href="./css/all.css")
+  body 
+    .wrap
+      .banner
+        .header
+          h1 
+            a(href="./index.html")
+          span.material-icons.menu-icon menu
+          ul.mobile-menu
+            li
+              a(href="./index.html") 首頁
+            li
+              a(href="./html/shopping.html") 訂餐
+            li
+              a(href="./html/login.html") 登入
+          ul.menu
+            li
+              a(href="./index.html") 首頁
+            li
+              a(href="./html/shopping.html") 訂餐
+            li
+              a(href="./html/login.html") 登入
+        .banner-content
+          h2.mobile-slogan 咬一口<br/>就無法忘懷的漢堡
+          h2.slogan 咬一口就無法忘懷的漢堡
+          h3.sub-title 七夕絕對無法錯過的好滋味<br/>
+            span.material-icons restaurant&nbsp;
+            span 六角大漢堡&nbsp;
+            span.material-icons restaurant
+      .container 
+        h3.decorate-title 
+          span 客人總是在詢問<br/>這麼好吃的秘訣是什麼
+        ul.feature
+          li
+            img(src="./img/feature_1.png" alt="台灣本土蔬菜")
+            h4 台灣本土蔬菜
+            p In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.
+          li
+            img(src="./img/feature_2.png" alt="專業米其林廚師")
+            h4 專業米其林廚師
+            p Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.
+          li
+            img(src="./img/feature_3.png" alt="對於專業不能退讓")
+            h4 對於專業不能退讓
+            p Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.
+      .chef 
+        img(src="./img/main_chef_brown.png" alt="今日主廚")
+        .intro
+          h4 今日主廚：帕金森、梅在帕
+            span Tody Chef: Plum in Shock
+          p Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.
+      .container 
+        h3.title 聽聽別人的感想
+        ul.comment
+          li
+            img(src="./img/avatar_1.png" alt="高雄一口吃")
+            .content
+              h4 高雄一口吃
+              p 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+              p.sign  -- 產品經理
+          li
+            img(src="./img/avatar_2.png" alt="廟口小霸王")
+            .content
+              h4 廟口小霸王
+              p 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+              p.sign  -- 金身道士
+          li
+            img(src="./img/avatar_3.png" alt="春天也來了")
+            .content
+              h4 春天也來了
+              p  自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+              p.sign  -- 美麗萬分
+      .order
+        h3 我們的位置不太夠坐<br/>要不要先訂位呢？
+        .order-info
+          img(src="./img/Map.png" alt="地圖")
+          form(action="#")
+            label(for="name") 姓名
+            input#name(type="text" placeholder="六角講師吃尾牙")
+            label(for="tel") 電話
+            input#tel(type="tel" placeholder="02-1234567")
+            label(for="mail") 信箱
+            input#mail(type="mail" placeholder="test@gmail.com")
+            label(for="num") 人數
+            input#num(type="num")
+            h5 是否需要素食
+            .vegetarian-group
+              label(for="vegetarian") 是
+              input#vegetarian(type="radio" name="素食" value="yes")
+              label(for="no-vegetarian") 否
+              input#no-vegetarian(type="radio" name="素食" value="no")
+            .btn-group 
+              button(type="submit").btn.cancel 取消
+              button(type="submit").btn.confirm 送出
+      ul.footer
+        li.about 
+          h4 關於 六角西餐廳
+          p Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. 
+        li.contact 
+          h4 聯絡方式
+          ul
+            li 高雄市中正五路到底
+            li
+              a(href="tel:+886886886") +886 886 886
+            li
+              a(href="mailto:service@hexschool.com") service@hexschool.com
+        li
+          h2
+            a(href="./index.html") 
+          ul.social 
+            li
+              a(href="#") 
+                img(src="./img/social.png" alt="")
+            li
+              a(href="#") 
+                img(src="./img/twitter.png" alt="") 
+            li
+              a(href="#") 
+                img(src="./img/facebook.png" alt="")
+
+script(src="./all.js") 
